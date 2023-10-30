@@ -1,40 +1,76 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+
 }
-.container{
+.Menu{
     width: 100%;
-    min-height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.Menu h2{
+    color: #fff;
+}
+.Menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 90px;
+}
+.Menu ul li{
+    list-style: none;
+    padding: 0px 5px;
+}
+.Menu ul li a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.container{
+    width: 1140px; 
+    margin: 0 auto;
 }
 .main-card{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px;
 }
-.main-card .card{
-    flex: 2;
-    margin: 20px 20px;
+.card{
+    width: 300px;
+    height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
 }
-.main-card .card img{
-    width: 250px;
-    height: 350px;
+.card-img img {
+    width: 100%;
+    border-radius: 10px;
 }
-.main-card .card h2{
-    margin: 15px 0px;
-    font-size: 25px;
+.card-details h2{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-details p{
+    margin-top: 10px;
     font-family: sans-serif;
 }
-.main-card .card p{
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 0px 10px;
-    margin-bottom: 20px;
-    font-family: sans-serif;
+.card-details button{
+    border: none;
+    background-color: aqua;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+body{
+    background-color: yellowgreen;
+}
+.card-details{
+    padding: 10px;
 }
